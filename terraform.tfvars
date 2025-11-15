@@ -28,7 +28,7 @@ machine_type = "e2-small"
 
 # Number of worker nodes to start with
 # 1 node is sufficient for learning; increase for production
-initial_node_count = 1
+initial_node_count = 2
 
 # Storage space on each node (in GB)
 # 12 GB is suitable for basic testing and learning
