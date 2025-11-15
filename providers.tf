@@ -20,6 +20,10 @@ terraform {
       version = "6.50.0"             # Specific version to ensure consistency
     }
   }
+  backend "gcs" {
+    bucket = "gcp-tftbk"
+    prefix = "GKE/state"
+  }
 }
 
 # Configure the Google Cloud provider with authentication details
