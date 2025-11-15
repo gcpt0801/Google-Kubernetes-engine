@@ -16,8 +16,8 @@ terraform {
   # Providers are plugins that let Terraform talk to specific services
   required_providers {
     google = {
-      source  = "hashicorp/google"  # Official Google Cloud provider
-      version = "6.50.0"             # Specific version to ensure consistency
+      source  = "hashicorp/google" # Official Google Cloud provider
+      version = "6.50.0"           # Specific version to ensure consistency
     }
   }
   backend "gcs" {
@@ -28,6 +28,6 @@ terraform {
 
 # Configure the Google Cloud provider with authentication details
 provider "google" {
-  project     = var.project_id  # GCP project where resources will be created
-  region      = var.region      # Default region for GCP resources
+  project = var.project_id # GCP project where resources will be created
+  region  = var.region     # Default region for GCP resources
 }

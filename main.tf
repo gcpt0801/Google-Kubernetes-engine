@@ -18,11 +18,11 @@ module "gke_cluster" {
 
   # Pass all variables from root to the module
   # These values come from terraform.tfvars or command-line overrides
-  project_id         = var.project_id        # GCP project ID
-  region             = var.region            # Region for cluster
-  cluster_name       = var.cluster_name      # Name of the cluster
-  machine_type       = var.machine_type      # Size of compute instances
-  initial_node_count = var.initial_node_count  # Number of initial nodes
-  disk_size_gb       = var.disk_size_gb      # Storage per node
-  enable_stackdriver = var.enable_stackdriver  # Monitoring enabled?
+  project_id         = var.project_id         # GCP project ID
+  region             = var.region             # Region for cluster
+  cluster_name       = var.cluster_name       # Name of the cluster
+  machine_type       = var.machine_type       # Size of compute instances
+  initial_node_count = var.initial_node_count # Number of initial nodes
+  disk_size_gb       = var.disk_size_gb       # Storage per node
+  enable_stackdriver = var.enable_stackdriver # Monitoring enabled?
 }

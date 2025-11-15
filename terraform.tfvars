@@ -12,11 +12,11 @@
 
 # ===== GCP Configuration =====
 # Your Google Cloud Project ID (REQUIRED - must be changed to your project)
-project_id   = "gcp-terraform-demo-474514"
+project_id = "gcp-terraform-demo-474514"
 
 # Geographic region for your cluster
 # Try different regions if you encounter quota limits
-region       = "us-west1"
+region = "us-west1"
 
 # Display name for your Kubernetes cluster in Google Cloud Console
 cluster_name = "gke-cluster"

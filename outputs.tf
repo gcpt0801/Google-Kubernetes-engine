@@ -21,7 +21,7 @@ output "kubernetes_cluster_name" {
 output "kubernetes_cluster_host" {
   description = "GKE Cluster Host"
   value       = module.gke_cluster.cluster_host
-  sensitive   = true  # Hide from terminal output for security
+  sensitive   = true # Hide from terminal output for security
 }
 
 # Display the GCP region where the cluster was created
